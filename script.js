@@ -1,7 +1,6 @@
 // RYKO Creator Toolkit
 // Version 1.1.0
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
     // -------------------------
@@ -24,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const results = document.getElementById("titleResults");
 
         if (!title) {
+
             results.innerHTML = `
                 <div class="result-item">
                     Please enter a title first.
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             results.classList.remove("hidden");
             return;
         }
+
 
         const length = title.length;
 
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "nobody",
             "you"
         ];
+
 
         let curiosityScore = 0;
 
@@ -96,31 +98,54 @@ document.addEventListener("DOMContentLoaded", function () {
         results.innerHTML = `
 
             <div class="result-item">
-                <div class="result-title">Title length</div>
+
+                <div class="result-title">
+                    Title length
+                </div>
+
                 <div class="result-value">
                     ${length} characters — ${lengthScore}
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">Curiosity</div>
+
+                <div class="result-title">
+                    Curiosity
+                </div>
+
                 <div class="result-value">
                     ${curiosityResult}
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">Clarity</div>
+
+                <div class="result-title">
+                    Clarity
+                </div>
+
                 <div class="result-value">
                     ${clarity}
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">Word count</div>
+
+                <div class="result-title">
+                    Word count
+                </div>
+
                 <div class="result-value">
                     ${words.length} words
                 </div>
+
             </div>
 
         `;
@@ -214,38 +239,67 @@ document.addEventListener("DOMContentLoaded", function () {
         results.innerHTML = `
 
             <div class="result-item">
-                <div class="result-title">0–2 sec — Hook</div>
+
+                <div class="result-title">
+                    0–2 sec — Hook
+                </div>
+
                 <div class="result-value">
                     Start with the most interesting part of "${idea}".
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">2–7 sec — Setup</div>
+
+                <div class="result-title">
+                    2–7 sec — Setup
+                </div>
+
                 <div class="result-value">
                     Quickly explain what the viewer is about to see.
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">7–25 sec — Main content</div>
+
+                <div class="result-title">
+                    7–25 sec — Main content
+                </div>
+
                 <div class="result-value">
                     Deliver the information, story or ranking.
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">25–30 sec — Payoff</div>
+
+                <div class="result-title">
+                    25–30 sec — Payoff
+                </div>
+
                 <div class="result-value">
                     End with the strongest result or surprising moment.
                 </div>
+
             </div>
 
+
             <div class="result-item">
-                <div class="result-title">Final step</div>
+
+                <div class="result-title">
+                    Final step
+                </div>
+
                 <div class="result-value">
                     Create a reason to keep watching or comment.
                 </div>
+
             </div>
 
         `;
@@ -279,8 +333,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+
         const idea = assistantInput.value.trim();
         const results = document.getElementById("assistantResults");
+
 
         if (!idea) {
 
@@ -303,6 +359,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
+        // -------------------------
+        // TITLE IDEAS
+        // -------------------------
+
         const titles = [
 
             `Why ${idea} Actually Matters`,
@@ -313,6 +373,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         ];
 
+
+        // -------------------------
+        // HOOK IDEAS
+        // -------------------------
 
         const hooks = [
 
@@ -325,6 +389,40 @@ document.addEventListener("DOMContentLoaded", function () {
         ];
 
 
+        // -------------------------
+        // SCRIPT
+        // -------------------------
+
+        const script = `
+
+Hook:
+${hooks[0]}
+
+Setup:
+Here's what you need to know about ${idea}.
+
+Main content:
+The interesting part about ${idea} is that most people look at it the wrong way.
+
+First, understand the basic idea.
+
+Then, look at what actually happens in real situations.
+
+Finally, remember that the small details can make the biggest difference.
+
+Payoff:
+Now you know why ${idea} is more interesting than it first appears.
+
+CTA:
+Follow for more quick insights like this.
+
+`;
+
+
+        // -------------------------
+        // CREATOR PACKAGE OUTPUT
+        // -------------------------
+
         results.innerHTML = `
 
             <div class="result-item">
@@ -336,7 +434,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="result-value">
 
                     ${titles.map((title, index) => `
-                        <div>${index + 1}. ${title}</div>
+                        <div>
+                            ${index + 1}. ${title}
+                        </div>
                     `).join("")}
 
                 </div>
@@ -353,7 +453,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="result-value">
 
                     ${hooks.map((hook, index) => `
-                        <div>${index + 1}. ${hook}</div>
+                        <div>
+                            ${index + 1}. ${hook}
+                        </div>
                     `).join("")}
 
                 </div>
@@ -391,10 +493,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
             </div>
 
+
+            <div class="result-item">
+
+                <div class="result-title">
+                    30-Second Script
+                </div>
+
+                <div class="result-value">
+
+                    ${script.replace(/\n/g, "<br>")}
+
+                </div>
+
+            </div>
+
+
+            <div class="result-item">
+
+                <div class="result-title">
+                    Call To Action
+                </div>
+
+                <div class="result-value">
+                    Follow for more quick insights like this.
+                </div>
+
+            </div>
+
         `;
 
 
         results.classList.remove("hidden");
+
     };
 
 });
