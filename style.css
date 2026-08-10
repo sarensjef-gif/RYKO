@@ -289,7 +289,40 @@ footer {
 /* MOBILE */
 
 @media (max-width: 700px) {
+/* CREATOR ASSISTANT */
 
+.creator-assistant {
+    border-color: #3a3155;
+    background: linear-gradient(
+        135deg,
+        #111114 0%,
+        #14111c 100%
+    );
+}
+
+.creator-assistant .tool-number {
+    color: #a78bfa;
+}
+
+.creator-assistant .tool-label {
+    color: #a78bfa;
+    border-color: #3a3155;
+}
+
+.creator-assistant textarea {
+    min-height: 150px;
+}
+
+.assistant-count {
+    text-align: right;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.creator-assistant .tool-button {
+    padding: 13px 20px;
+}
     .hero {
         padding: 80px 0;
     }
