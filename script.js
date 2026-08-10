@@ -1,5 +1,5 @@
 // RYKO Creator Toolkit
-// Version 1.0.0
+// Version 1.1.0
 
 
 // -------------------------
@@ -234,6 +234,136 @@ function createStructure() {
             <div class="result-value">
                 Create a reason to keep watching or comment.
             </div>
+        </div>
+
+    `;
+
+
+    results.classList.remove("hidden");
+}
+
+
+// -------------------------
+// CREATOR ASSISTANT
+// -------------------------
+
+const assistantInput = document.getElementById("assistantInput");
+const assistantCount = document.getElementById("assistantCount");
+
+
+if (assistantInput && assistantCount) {
+
+    assistantInput.addEventListener("input", function () {
+        assistantCount.textContent = assistantInput.value.length;
+    });
+
+}
+
+
+function generateCreatorPackage() {
+
+    const idea = assistantInput.value.trim();
+    const results = document.getElementById("assistantResults");
+
+    if (!idea) {
+
+        results.innerHTML = `
+            <div class="result-item">
+                <div class="result-title">Creator Assistant</div>
+                <div class="result-value">
+                    Enter a video idea first.
+                </div>
+            </div>
+        `;
+
+        results.classList.remove("hidden");
+        return;
+    }
+
+
+    const titles = [
+
+        `Why ${idea} Actually Matters`,
+
+        `The Truth About ${idea}`,
+
+        `What Nobody Tells You About ${idea}`
+
+    ];
+
+
+    const hooks = [
+
+        `Most people don't know this about ${idea}.`,
+
+        `Here's what happens when you really understand ${idea}.`,
+
+        `You probably think you understand ${idea} — but there's more to it.`
+
+    ];
+
+
+    results.innerHTML = `
+
+        <div class="result-item">
+
+            <div class="result-title">
+                Title Ideas
+            </div>
+
+            <div class="result-value">
+
+                ${titles.map((title, index) => `
+                    <div>${index + 1}. ${title}</div>
+                `).join("")}
+
+            </div>
+
+        </div>
+
+
+        <div class="result-item">
+
+            <div class="result-title">
+                Hook Ideas
+            </div>
+
+            <div class="result-value">
+
+                ${hooks.map((hook, index) => `
+                    <div>${index + 1}. ${hook}</div>
+                `).join("")}
+
+            </div>
+
+        </div>
+
+
+        <div class="result-item">
+
+            <div class="result-title">
+                Shorts Structure
+            </div>
+
+            <div class="result-value">
+
+                <strong>0–2 sec — Hook</strong><br>
+                Start with the most interesting part of the idea.
+                <br><br>
+
+                <strong>2–7 sec — Setup</strong><br>
+                Quickly explain what the viewer is about to learn or see.
+                <br><br>
+
+                <strong>7–25 sec — Main content</strong><br>
+                Deliver the key information, story or explanation.
+                <br><br>
+
+                <strong>25–30 sec — Payoff</strong><br>
+                End with the strongest insight or result.
+
+            </div>
+
         </div>
 
     `;
