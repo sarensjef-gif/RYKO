@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RYKO Creator Toolkit - free tools for YouTube creators.">
+    <title>RYKO Creator Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <div class="logo">RYKO<span>.</span></div>
+        <a href="https://github.com/sarensjef-gif/RYKO" target="_blank" class="github-link">
+            View on GitHub
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge">FREE & OPEN SOURCE</div>
+
+            <h1>Build better<br><span>YouTube content.</span></h1>
+
+            <p class="hero-text">
+                Simple tools for creators to turn ideas into stronger titles,
+                hooks and video structures.
+            </p>
+
+            <a href="#tools" class="primary-button">Explore the tools ↓</a>
+        </div>
+    </section>
+
+
+    <section id="tools" class="tools-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">CREATOR TOOLS</p>
+                <h2>Make your next video stronger.</h2>
+            </div>
+
+
+            <!-- TITLE ANALYZER -->
+
+            <div class="tool-card">
+
+                <div class="tool-header">
+                    <div>
+                        <span class="tool-number">01</span>
+                        <h3>Title Analyzer</h3>
+                    </div>
+
+                    <span class="tool-label">ANALYZE</span>
+                </div>
+
+                <p>
+                    Check your title for length, clarity and curiosity.
+                </p>
+
+                <textarea
+                    id="titleInput"
+                    placeholder="Enter your YouTube title..."
+                    maxlength="150"
+                ></textarea>
+
+                <div class="character-count">
+                    <span id="titleCount">0</span>/100 characters
+                </div>
+
+                <button onclick="analyzeTitle()" class="tool-button">
+                    Analyze title
+                </button>
+
+                <div id="titleResults" class="results hidden"></div>
+
+            </div>
+
+
+            <!-- HOOK GENERATOR -->
+
+            <div class="tool-card">
+
+                <div class="tool-header">
+                    <div>
+                        <span class="tool-number">02</span>
+                        <h3>Hook Generator</h3>
+                    </div>
+
+                    <span class="tool-label">CREATE</span>
+                </div>
+
+                <p>
+                    Generate hook ideas from a simple video topic.
+                </p>
+
+                <input
+                    id="topicInput"
+                    type="text"
+                    placeholder="Example: How I gained 10,000 subscribers"
+                >
+
+                <button onclick="generateHooks()" class="tool-button">
+                    Generate hooks
+                </button>
+
+                <div id="hookResults" class="results hidden"></div>
+
+            </div>
+
+
+            <!-- SHORTS STRUCTURE -->
+
+            <div class="tool-card">
+
+                <div class="tool-header">
+                    <div>
+                        <span class="tool-number">03</span>
+                        <h3>Shorts Structure</h3>
+                    </div>
+
+                    <span class="tool-label">STRUCTURE</span>
+                </div>
+
+                <p>
+                    Turn a simple idea into a basic YouTube Shorts structure.
+                </p>
+
+                <input
+                    id="ideaInput"
+                    type="text"
+                    placeholder="Example: Ranking the most relatable school moments"
+                >
+
+                <button onclick="createStructure()" class="tool-button">
+                    Create structure
+                </button>
+
+                <div id="structureResults" class="results hidden"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="about-section">
+
+        <div class="container about-grid">
+
+            <div>
+                <p class="eyebrow">ABOUT RYKO</p>
+                <h2>Built for creators, by creators.</h2>
+            </div>
+
+            <div>
+                <p>
+                    RYKO is an open-source experiment exploring how AI-assisted
+                    development and simple creator tools can make content
+                    creation more accessible.
+                </p>
+
+                <p>
+                    The project is continuously evolving. Contributions,
+                    suggestions and feedback are welcome.
+                </p>
+
+                <a
+                    href="https://github.com/sarensjef-gif/RYKO"
+                    target="_blank"
+                    class="text-link"
+                >
+                    Contribute on GitHub →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="logo">RYKO<span>.</span></div>
+
+        <p>
+            Open-source creator tools.
+        </p>
+
+        <p>
+            © 2026 RYKO
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
