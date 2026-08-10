@@ -1,61 +1,67 @@
 # RYKO Creator Toolkit
 
-Free and open-source tools for YouTube creators.
+RYKO is an open-source creator toolkit for YouTube creators, focused on making content planning and development more accessible through simple creator tools and AI-assisted workflows.
 
-RYKO is an early-stage open-source project exploring how simple software
-and AI-assisted development can make content creation more accessible.
+The project started as a small collection of browser-based creator utilities and is now evolving toward an AI-ready creator assistant.
 
-## Features
+## 🚀 Current Features
 
-### Title Analyzer
-Analyze a YouTube title for:
-- Character length
-- Word count
-- Clarity
-- Curiosity
+- [x] YouTube Title Analyzer
+- [x] Hook Generator
+- [x] Shorts Structure Generator
+- [x] Responsive web interface
+- [x] GitHub Pages deployment
+- [x] MIT open-source license
+- [x] Contribution guidelines
 
-### Hook Generator
-Generate different hook ideas from a simple video topic.
+## 🛠️ RYKO v1.1 — AI Creator Assistant
 
-### Shorts Structure
-Turn a basic video idea into a simple YouTube Shorts structure.
+The next development phase focuses on turning RYKO from a collection of individual tools into a unified creator workflow.
 
-## Demo
+### Planned features
 
-The project can be used directly in the browser through GitHub Pages.
-
-## Why RYKO?
-
-Many creators have good ideas but struggle with packaging, hooks and
-structuring their content.
-
-RYKO aims to build simple tools that help creators move from an idea
-to a publishable piece of content faster.
-
-## Roadmap
-
-- [x] Initial creator toolkit
-- [x] Title analyzer
-- [x] Hook generator
-- [x] Shorts structure generator
+- [ ] Unified Creator Assistant
+- [ ] AI-ready application architecture
+- [ ] AI provider abstraction
 - [ ] AI-powered title analysis
 - [ ] AI-powered hook generation
-- [ ] YouTube analytics integration
-- [ ] Creator workflow automation
-- [ ] More open-source creator tools
-- [ ] Community contributions
+- [ ] AI script assistance
+- [ ] Content idea generation
+- [ ] Improved error handling
+- [ ] Mobile UI improvements
+- [ ] Automated testing
+- [ ] Developer documentation
 
-## Contributing
+## 🎯 Long-term Vision
 
-Contributions, suggestions and improvements are welcome.
+The long-term goal of RYKO is to become a free, open-source toolkit that helps creators move from an initial idea to a finished piece of content.
 
-If you have an idea for a new creator tool, feel free to open an issue
-or submit a pull request.
+The project also explores how AI-assisted development can help people without a traditional software-development background build and maintain useful open-source software.
 
-## Project status
+## 🤖 AI-Assisted Development
 
-RYKO is an early-stage project and is actively being developed.
+RYKO is being developed with AI-assisted development workflows in mind.
 
-## License
+The project will explore how tools such as Claude Code can be used to:
 
-MIT
+- Understand and improve an existing codebase
+- Design new features
+- Refactor multiple files
+- Identify and fix bugs
+- Write and improve tests
+- Improve documentation
+- Develop new AI-powered creator workflows
+
+AI should assist the development process while keeping the project understandable, maintainable and open-source.
+
+## 🏗️ Project Structure
+
+```text
+RYKO/
+├── index.html          # Main web application
+├── style.css           # Application styling
+├── script.js           # Creator tools and application logic
+├── README.md           # Project documentation
+├── CONTRIBUTING.md     # Contribution guidelines
+├── LICENSE             # MIT license
+└── .gitignore          # Git configuration
