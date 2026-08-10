@@ -44,7 +44,40 @@
                 <p class="eyebrow">CREATOR TOOLS</p>
                 <h2>Make your next video stronger.</h2>
             </div>
+<!-- CREATOR ASSISTANT -->
 
+<div class="tool-card creator-assistant">
+
+    <div class="tool-header">
+        <div>
+            <span class="tool-number">00</span>
+            <h3>Creator Assistant</h3>
+        </div>
+
+        <span class="tool-label">START HERE</span>
+    </div>
+
+    <p>
+        Turn a simple video idea into titles, hooks and a Shorts structure.
+    </p>
+
+    <textarea
+        id="assistantInput"
+        placeholder="Example: Why people always hit snooze..."
+        maxlength="500"
+    ></textarea>
+
+    <div class="assistant-count">
+        <span id="assistantCount">0</span>/500 characters
+    </div>
+
+    <button onclick="generateCreatorPackage()" class="tool-button">
+        Build my content package
+    </button>
+
+    <div id="assistantResults" class="results hidden"></div>
+
+</div>
 
             <!-- TITLE ANALYZER -->
 
