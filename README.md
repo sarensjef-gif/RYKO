@@ -1,67 +1,74 @@
 # RYKO Creator Toolkit
 
-RYKO is an open-source creator toolkit for YouTube creators, focused on making content planning and development more accessible through simple creator tools and AI-assisted workflows.
+RYKO is an open-source toolkit for YouTube creators.
 
-The project started as a small collection of browser-based creator utilities and is now evolving toward an AI-ready creator assistant.
+It helps turn a simple content idea into stronger titles, hooks, short-form structures, and a basic content package — directly in the browser.
 
-## 🚀 Current Features
+The project is intentionally lightweight, accessible, and easy to understand so that creators and developers can use, improve, and extend it.
 
-- [x] YouTube Title Analyzer
-- [x] Hook Generator
-- [x] Shorts Structure Generator
-- [x] Responsive web interface
-- [x] GitHub Pages deployment
-- [x] MIT open-source license
-- [x] Contribution guidelines
+## 🚀 Try RYKO
 
-## 🛠️ RYKO v1.1 — AI Creator Assistant
+**Live demo:**  
+https://sarensjef-gif.github.io/RYKO/
 
-The next development phase focuses on turning RYKO from a collection of individual tools into a unified creator workflow.
+**Repository:**  
+https://github.com/sarensjef-gif/RYKO
 
-### Planned features
+---
 
-- [ ] Unified Creator Assistant
-- [ ] AI-ready application architecture
-- [ ] AI provider abstraction
-- [ ] AI-powered title analysis
-- [ ] AI-powered hook generation
-- [ ] AI script assistance
-- [ ] Content idea generation
-- [ ] Improved error handling
-- [ ] Mobile UI improvements
-- [ ] Automated testing
-- [ ] Developer documentation
+## ✨ What RYKO does
 
-## 🎯 Long-term Vision
+RYKO currently provides several browser-based creator tools.
 
-The long-term goal of RYKO is to become a free, open-source toolkit that helps creators move from an initial idea to a finished piece of content.
+### Creator Assistant
 
-The project also explores how AI-assisted development can help people without a traditional software-development background build and maintain useful open-source software.
+Turn a simple video idea into a complete starter package containing:
 
-## 🤖 AI-Assisted Development
+- Title ideas
+- Hook ideas
+- Shorts structure
+- 30-second script
+- Call to action
 
-RYKO is being developed with AI-assisted development workflows in mind.
+### Title Analyzer
 
-The project will explore how tools such as Claude Code can be used to:
+Analyze a YouTube title for:
 
-- Understand and improve an existing codebase
-- Design new features
-- Refactor multiple files
-- Identify and fix bugs
-- Write and improve tests
-- Improve documentation
-- Develop new AI-powered creator workflows
+- Length
+- Curiosity
+- Clarity
+- Word count
 
-AI should assist the development process while keeping the project understandable, maintainable and open-source.
+### Hook Generator
 
-## 🏗️ Project Structure
+Generate multiple hook ideas from a simple video topic.
+
+### Shorts Structure
+
+Turn an idea into a simple short-form video structure:
+
+- 0–2 seconds — Hook
+- 2–7 seconds — Setup
+- 7–25 seconds — Main content
+- 25–30 seconds — Payoff
+
+---
+
+## 🎯 Why RYKO exists
+
+Creating content often starts with a simple idea, but turning that idea into something usable can require several separate steps.
+
+RYKO explores a simpler workflow:
 
 ```text
-RYKO/
-├── index.html          # Main web application
-├── style.css           # Application styling
-├── script.js           # Creator tools and application logic
-├── README.md           # Project documentation
-├── CONTRIBUTING.md     # Contribution guidelines
-├── LICENSE             # MIT license
-└── .gitignore          # Git configuration
+Video idea
+    ↓
+Titles
+    ↓
+Hooks
+    ↓
+Structure
+    ↓
+Script
+    ↓
+Call to action
